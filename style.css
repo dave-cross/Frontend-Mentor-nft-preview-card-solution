@@ -152,6 +152,7 @@ picture {
 
 .card {
   background-color: var(--color-background-card);
+  box-shadow: var(--shadow-default);
   border-radius: var(--radius-lg);
   padding: var(--space-300);
   padding-block-end: var(--space-300-400);
