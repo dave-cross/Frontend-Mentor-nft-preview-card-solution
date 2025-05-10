@@ -1,0 +1,83 @@
+:root {
+  /* Tier 1 */
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --cyan-400: hsl(178, 100%, 50%);
+  --blue-500: hsl(215, 51%, 70%);
+  --blue-800: hsl(215, 32%, 27%); /* (line) */
+  --blue-900: hsl(216, 50%, 16%); /* (card BG) */
+  --blue-950: hsl(217, 54%, 11%); /* (main BG) */
+
+  --font-family-sans: "Outfit", sans-serif;
+
+  --font-size-22: 22px;
+  --font-size-18: 18px;
+  --font-size-16: 16px;
+  --font-size-15: 15px;
+
+  /* @link https://utopia.fyi/clamp/calculator?a=375,500,15—16 */
+  --font-size-15-16: clamp(
+    var(--font-size-15),
+    0.75rem + 0.8vw,
+    var(--font-size-16)
+  );
+
+  --font-weight-600: 600;
+  --font-weight-400: 400;
+  --font-weight-300: 300;
+
+  --line-height-000: normal;
+  --line-height-144: 1.444444;
+
+  --space-100: 8px;
+  --space-150: 12px;
+  --space-200: 16px;
+  --space-300: 24px;
+  --space-400: 32px;
+
+  /* @link https://utopia.fyi/clamp/calculator?a=375,500,12—16|16—24|24—32 */
+  --space-150-200: clamp(var(--space-150), 0rem + 3.2vw, var(--space-200));
+  --space-200-300: clamp(var(--space-200), -0.5rem + 6.4vw, var(--space-300));
+  --space-300-400: clamp(var(--space-300), 0rem + 6.4vw, var(--space-400));
+
+  --radius-8: 8px;
+  --radius-15: 15px;
+
+  /* Tier 2 */
+
+  --color-background-default: var(--blue-950);
+  --color-background-card: var(--blue-900);
+  --color-background-hr: var(--blue-800);
+  --color-background-image-hover: hsl(from var(--cyan-400) h s l / 50.3%);
+
+  --color-content-default: var(--blue-500);
+  --color-content-heading: var(--cyan-400);
+  --color-content-primary: var(--cyan-400);
+  --color-content-knockout: var(--white);
+
+  --typography-body: var(--font-weight-300) var(--font-size-18) /
+    var(--line-height-144) var(--font-family-sans);
+  --typography-heading: var(--font-weight-600) var(--font-size-22) /
+    var(--line-height-000) var(--font-family-sans);
+  --typography-caption: var(--font-weight-400) var(--font-size-15-16) /
+    var(--line-height-000) var(--font-family-sans);
+  --typography-caption-bold: var(--font-weight-600) var(--font-size-15-16) /
+    var(--line-height-000) var(--font-family-sans);
+
+  --radius-lg: var(--radius-15);
+  --radius-sm: var(--radius-8);
+
+  --shadow-default: 0 25px 50px 0 hsl(from var(--black) h s l / 9.53%);
+
+  --max-width: 350px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: var(--typography-body);
+}
