@@ -149,6 +149,46 @@ picture {
     max(var(--space-300), calc(50% - var(--_max-width) / 2));
 }
 
+.card {
+  background-color: var(--color-background-card);
+  border-radius: var(--radius-lg);
+  padding: var(--space-300);
+  padding-block-end: var(--space-300-400);
+}
+
+.card__image {
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+
+  a:has(&) {
+    display: grid;
+    place-items: center;
+
+    > *,
+    &::after {
+      grid-area: 1/1/-1/-1;
+    }
+
+    &:hover::after {
+      content: url(./images/icon-view.svg);
+      background-color: var(--color-background-image-hover);
+      width: 100%;
+      height: 100%;
+      align-content: center;
+      text-align: center;
+    }
+  }
+}
+
+.card__content {
+  h2 + * {
+    --flow-space: var(--space-150-200);
+  }
+  hr {
+    --flow-space: var(--space-200-300);
+  }
+}
+
 .author {
   img {
     width: 33px;
