@@ -80,4 +80,41 @@
 
 body {
   font: var(--typography-body);
+  color: var(--color-content-default);
+  background-color: var(--color-background-default);
+}
+
+h2 {
+  font: var(--typography-heading);
+  color: var(--color-content-knockout);
+}
+
+a {
+  color: var(--color-content-knockout);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--color-content-primary);
+}
+
+data {
+  font: var(--typography-caption-bold);
+  color: var(--color-content-primary);
+}
+
+time {
+  font: var(--typography-caption);
+}
+
+hr {
+  border: 0;
+  border-block-start: 1px solid var(--color-background-hr);
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
 }
