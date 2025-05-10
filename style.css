@@ -49,6 +49,7 @@
   --color-background-card: var(--blue-900);
   --color-background-hr: var(--blue-800);
   --color-background-image-hover: hsl(from var(--cyan-400) h s l / 50.3%);
+  --color-background-light: var(--white);
 
   --color-content-default: var(--blue-500);
   --color-content-heading: var(--cyan-400);
@@ -189,9 +190,18 @@ picture {
   }
 }
 
+.price {
+  --cluster-space: var(--space-100);
+  --flow-space: var(--space-200-300);
+}
+
 .author {
+  --flow-space: var(--space-200);
+  font: var(--typography-caption);
   img {
     width: 33px;
     height: 33px;
+    border-radius: 50%;
+    border: 1px solid var(--color-background-light);
   }
 }
